@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yojana Mitra | Government Scheme Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background decoration -->
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+
+    <!-- HEADER -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    🏛️
+                </div>
+
+                <div>
+                    <h1>Yojana Mitra</h1>
+                    <p>Your gateway to government benefits</p>
+                </div>
+
+            </div>
+
+            <div class="prototype-badge">
+                <span></span>
+                PROTOTYPE
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================================= -->
+        <!-- SCREEN 1 : PROFILE FORM -->
+        <!-- ================================= -->
+
+        <section id="screen-form" class="screen active">
+
+            <div class="hero">
+
+                <div class="hero-badge">
+                    🇮🇳 Made for Citizens
+                </div>
+
+                <h2>
+                    Discover the benefits
+                    <span>you deserve.</span>
+                </h2>
+
+                <p>
+                    Tell us a little about yourself and Yojana Mitra
+                    will help identify government schemes you may be
+                    eligible for.
+                </p>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>01</strong>
+                        <span>Tell us about you</span>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>Find matching schemes</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>Know how to apply</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORM CARD -->
+
+            <div class="form-card">
+
+                <div class="form-top">
+
+                    <div>
+                        <span class="small-label">STEP 01</span>
+                        <h3>Your profile</h3>
+                        <p>
+                            Basic information helps us find relevant schemes.
+                        </p>
+                    </div>
+
+                    <div class="completion">
+                        <div class="completion-circle">
+                            <span>0%</span>
+                        </div>
+
+                        <small>Profile</small>
+                    </div>
+
+                </div>
+
+
+                <form id="profileForm">
+
+
+                    <!-- PERSONAL DETAILS -->
+
+                    <div class="form-section">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                👤
+                            </div>
+
+                            <div>
+                                <h4>Personal details</h4>
+                                <p>Basic information about you</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="field-grid">
+
+                            <div class="field full-width">
+
+                                <label for="name">
+                                    Full name
+                                    <span>Optional</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="e.g. Ramesh Kumar">
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="age">
+                                    Age
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="age"
+                                    min="0"
+                                    max="120"
+                                    placeholder="e.g. 34"
+                                    required>
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="gender">
+                                    Gender
+                                </label>
+
+                                <select id="gender">
+
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="marital">
+                                    Marital status
+                                </label>
+
+                                <select id="marital">
+
+                                    <option value="single">Single</option>
+                                    <option value="married">Married</option>
+                                    <option value="widowed">Widowed</option>
+                                    <option value="divorced">
+                                        Divorced / Separated
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="category">
+                                    Social category
+                                </label>
+
+                                <select id="category">
+
+                                    <option value="General">General</option>
+                                    <option value="EWS">EWS</option>
+                                    <option value="OBC">OBC</option>
+                                    <option value="SC">SC</option>
+                                    <option value="ST">ST</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="disability">
+                                    Disability
+                                </label>
+
+                                <select id="disability">
+
+                                    <option value="no">No</option>
+                                    <option value="yes">Yes</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- LOCATION -->
+
+                    <div class="form-section">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                📍
+                            </div>
+
+                            <div>
+                                <h4>Location & household</h4>
+                                <p>Help us understand your household</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="field-grid">
+
+                            <div class="field">
+
+                                <label for="state">
+                                    State / UT
+                                </label>
+
+                                <select id="state">
+
+                                    <option>Andhra Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chhattisgarh</option>
+                                    <option>Delhi</option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jharkhand</option>
+                                    <option selected>Karnataka</option>
+                                    <option>Kerala</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra</option>
+                                    <option>Odisha</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Uttarakhand</option>
+                                    <option>West Bengal</option>
+                                    <option>Other</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="area">
+                                    Area type
+                                </label>
+
+                                <select id="area">
+
+                                    <option value="rural">
+                                        Rural
+                                    </option>
+
+                                    <option value="urban">
+                                        Urban
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="income">
+                                    Annual family income
+                                </label>
+
+                                <div class="input-with-symbol">
+
+                                    <span>₹</span>
+
+                                    <input
+                                        type="number"
+                                        id="income"
+                                        min="0"
+                                        placeholder="180000"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="bpl">
+                                    Ration card
+                                </label>
+
+                                <select id="bpl">
+
+                                    <option value="no">
+                                        APL / None
+                                    </option>
+
+                                    <option value="yes">
+                                        BPL / Antyodaya
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- WORK -->
+
+                    <div class="form-section">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                💼
+                            </div>
+
+                            <div>
+                                <h4>Work, education & assets</h4>
+                                <p>Your professional and household situation</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="field-grid">
+
+                            <div class="field">
+
+                                <label for="occupation">
+                                    Occupation
+                                </label>
+
+                                <select id="occupation">
+
+                                    <option value="farmer">Farmer</option>
+                                    <option value="student">Student</option>
+                                    <option value="salaried">
+                                        Salaried employee
+                                    </option>
+
+                                    <option value="self-employed">
+                                        Self-employed / Business
+                                    </option>
+
+                                    <option value="unemployed">
+                                        Unemployed
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="education">
+                                    Education
+                                </label>
+
+                                <select id="education">
+
+                                    <option value="below10">
+                                        Below Class 10
+                                    </option>
+
+                                    <option value="class10">
+                                        Class 10 passed
+                                    </option>
+
+                                    <option value="class12">
+                                        Class 12 passed
+                                    </option>
+
+                                    <option value="graduate">
+                                        Graduate
+                                    </option>
+
+                                    <option value="postgraduate">
+                                        Post-graduate
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="ownsHouse">
+                                    Own a house?
+                                </label>
+
+                                <select id="ownsHouse">
+
+                                    <option value="no">No</option>
+                                    <option value="yes">Yes</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="ownsLand">
+                                    Agricultural land?
+                                </label>
+
+                                <select id="ownsLand">
+
+                                    <option value="no">No</option>
+                                    <option value="yes">Yes</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ACTIONS -->
+
+                    <div class="form-actions">
+
+                        <button
+                            type="button"
+                            id="resetBtn"
+                            class="btn secondary-btn">
+
+                            Reset
+
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="btn primary-btn">
+
+                            Find my schemes
+
+                            <span>→</span>
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <div class="trust-note">
+
+                <span>🔒</span>
+
+                <div>
+                    <strong>Your information stays private</strong>
+                    <p>
+                        This prototype uses your answers only to demonstrate
+                        scheme matching.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================= -->
+        <!-- SCREEN 2 : RESULTS -->
+        <!-- ================================= -->
+
+        <section id="screen-results" class="screen">
+
+            <div class="results-hero">
+
+                <button id="editBtn" class="back-button">
+                    ← Edit profile
+                </button>
+
+
+                <div class="results-intro">
+
+                    <div>
+
+                        <span class="small-label">
+                            YOUR RESULTS
+                        </span>
+
+                        <h2 id="resultsTitle">
+                            Schemes you may be eligible for
+                        </h2>
+
+                        <p id="resultsSubtitle">
+                            Based on the details you provided.
+                        </p>
+
+                    </div>
+
+
+                    <div class="match-circle">
+
+                        <strong id="matchCount">
+                            0
+                        </strong>
+
+                        <span>
+                            matches
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="results-summary">
+
+                <div>
+                    <span>👤</span>
+                    <strong id="summaryName">
+                        Your profile
+                    </strong>
+                </div>
+
+                <div>
+                    <span>📍</span>
+                    <strong id="summaryLocation">
+                        India
+                    </strong>
+                </div>
+
+                <div>
+                    <span>💰</span>
+                    <strong id="summaryIncome">
+                        Income
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div id="resultsList" class="results-grid"></div>
+
+
+            <div class="disclaimer">
+
+                <strong>Important:</strong>
+
+                Eligibility shown here is indicative.
+                Final approval depends on document verification
+                by the concerned government department.
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================= -->
+        <!-- SCREEN 3 : DETAILS -->
+        <!-- ================================= -->
+
+        <section id="screen-detail" class="screen">
+
+            <button class="back-button" id="backBtn">
+                ← Back to results
+            </button>
+
+            <div id="detailContent"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div>
+            <strong>Yojana Mitra</strong>
+            <span>Helping citizens discover government benefits.</span>
+        </div>
+
+        <span>
+            Prototype • For demonstration purposes
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
